@@ -29,7 +29,7 @@ import { i18n } from "./src/i18n/translation.ts";
 import I18nKey from "./src/i18n/i18nKey.ts";  // 导入i18n用于脚注小标题的翻译
 // https://astro.build/config
 export default defineConfig({
-	site: "https://mizuki.mysqil.com/",
+	site: "https://monlark.top",
 
 	base: "/",
 	trailingSlash: "always",

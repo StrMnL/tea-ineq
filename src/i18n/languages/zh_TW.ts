@@ -238,4 +238,6 @@ export const zh_TW: Translation = {
 	[Key.wallpaperBanner]: "橫幅模式",
 	[Key.wallpaperFullscreen]: "全屏模式",
 	[Key.wallpaperNone]: "隱藏壁紙",
+	
+	[Key.footnotes]: "脚注",
 };

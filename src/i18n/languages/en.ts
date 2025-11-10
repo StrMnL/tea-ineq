@@ -247,4 +247,6 @@ export const en: Translation = {
 	[Key.hour]: "h",
 	[Key.minute]: "min",
 	[Key.second]: "s",
+	
+	[Key.footnotes]: "Footnotes",
 };

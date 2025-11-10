@@ -233,4 +233,6 @@ export const zh_CN: Translation = {
 	[Key.wallpaperBanner]: "横幅模式",
 	[Key.wallpaperFullscreen]: "全屏模式",
 	[Key.wallpaperNone]: "隐藏壁纸",
+	
+	[Key.footnotes]: "注释",
 };

@@ -249,4 +249,6 @@ export const ja: Translation = {
 	[Key.wallpaperBanner]: "バナーモード",
 	[Key.wallpaperFullscreen]: "全画面モード",
 	[Key.wallpaperNone]: "壁紙を非表示",
+	
+	[Key.footnotes]: "脚注",
 };

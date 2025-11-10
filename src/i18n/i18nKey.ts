@@ -230,6 +230,8 @@ enum I18nKey {
 	wallpaperBanner = "wallpaperBanner",
 	wallpaperFullscreen = "wallpaperFullscreen",
 	wallpaperNone = "wallpaperNone",
+
+	footnotes = "footnotes",
 }
 
 export default I18nKey;

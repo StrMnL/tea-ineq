@@ -25,6 +25,8 @@ import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
+import { i18n } from "./src/i18n/translation.ts";
+import I18nKey from "./src/i18n/i18nKey.ts";  // 导入i18n用于脚注小标题的翻译
 // https://astro.build/config
 export default defineConfig({
 	site: "https://mizuki.mysqil.com/",
@@ -115,6 +117,9 @@ export default defineConfig({
 		sitemap(),
 	],
 	markdown: {
+		remarkRehype: {
+			footnoteLabel: i18n(I18nKey.footnotes),
+		},
 		remarkPlugins: [
 			remarkMath,
 			remarkReadingTime,

@@ -42,7 +42,13 @@ let links: NavBarLink[] = navBarConfig.links.map(
                 {/* 使用navbarTitle配置或默认配置 */}
                 {siteConfig.navbarTitle ? (
                     <>
-                        <img src={url(siteConfig.navbarTitle.icon || "/assets/home/home.png")} alt={siteConfig.navbarTitle.text} class="h-[1.75rem] w-[1.75rem] mb-1 mr-2 object-contain" loading="lazy" />
+                        {/* class加了一个dark:hidden，深色模式会隐藏这个图标 */}
+                        <img src={url(siteConfig.navbarTitle.icon || "/assets/home/teatime-light.png")} alt={siteConfig.navbarTitle.text} class="h-[1.75rem] w-[1.75rem] mb-1 mr-2 object-contain dark:hidden" loading="lazy" />
+                        
+                        {/* class加了hidden dark:block，默认隐藏，深色模式显示 */}
+                        {/* fallback: 设置了darkIcon则用，否则和上一行用同一个图标 */}
+                        <img src={url(siteConfig.navbarTitle.darkIcon || (siteConfig.navbarTitle.icon || "/assets/home/teatime-dark.png"))} alt={siteConfig.navbarTitle.text} class="h-[1.75rem] w-[1.75rem] mb-1 mr-2 object-contain hidden dark:block" loading="lazy" />
+
                         <span class="dark:text-white text-black">{siteConfig.navbarTitle.text}</span>
                     </>
                 ) : (

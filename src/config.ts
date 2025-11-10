@@ -49,6 +49,8 @@ export const siteConfig: SiteConfig = {
 		text: "茶和不等式！",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "/assets/home/teatime-light.png",
+		// Dark mode 下的图标（可选）
+		darkIcon: "/assets/home/teatime-dark.png",
 	},
 
 	bangumi: {

@@ -45,6 +45,7 @@ export type SiteConfig = {
 	navbarTitle?: {
 		text: string; // 顶栏标题文本
 		icon?: string; // 顶栏标题图标路径
+		darkIcon?: string; // Dark Mode 顶栏图标路径
 	};
 
 	// 添加字体配置

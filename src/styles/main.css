@@ -28,6 +28,15 @@
 	font-display: swap;
 }
 
+/* 导入 更纱黑体 UI SC Regular */
+@font-face {
+	font-family: "更纱黑体 UI SC";
+	src: url("/assets/font/sarasa-ui-sc-regular.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

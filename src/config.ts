@@ -21,7 +21,7 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE =8;//设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "偏微分茶会",
-	subtitle: "Tea & Inequality today",
+	subtitle: "Tea & Inequality",
 	siteURL: "https://monlark.top/",// 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-11-10", // 站点开始运行日期，用于站点统计组件计算运行天数
 
@@ -43,7 +43,7 @@ export const siteConfig: SiteConfig = {
 		skills: false, // 技能页面开关
 		timeline: false, // 时间线页面开关
 		albums: false, // 相册页面开关
-		devices: true, // 设备页面开关
+		devices: false, // 设备页面开关
 	},
 
 	// 顶栏标题配置

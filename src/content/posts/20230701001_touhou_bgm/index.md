@@ -6,6 +6,7 @@ tags: [Touhou,Data Structure]
 category: Explorations
 draft: false
 image: ./cover.jpg
+permalink: touhou-bgm-format
 ---
 封面Pixiv插画ID：94070537，画师：Akyuun。如有侵权请联系我以删除之。
 

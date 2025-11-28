@@ -6,6 +6,7 @@ tags: [FL Studio, Arrangement]
 category: Guides
 draft: false
 # image: ./00_cover.png
+permalink: fl-tips/colorful-notes
 ---
 
 ## 引入

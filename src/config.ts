@@ -317,7 +317,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "/assets/avatar/mai.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Starry Monlark",
-	bio: "我的爱是订书机！",
+	bio: "我的爱是订书机。",
 	typewriter: {
 		enable: false, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）

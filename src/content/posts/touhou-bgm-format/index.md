@@ -2,8 +2,8 @@
 title: 东方 Project 原作 BGM 文件格式探究
 description: 关于 thbgm.dat、thbgm.fmt 和 musiccmt.txt 的浅显研究。
 published: 2023-07-01
-tags: [Touhou,Data Structure]
-category: Explorations
+tags: [东方 Project,数据结构]
+category: 技术
 draft: false
 image: ./nikita-Oybl3L0_vq4-unsplash.webp
 permalink: touhou-bgm-format

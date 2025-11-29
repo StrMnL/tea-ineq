@@ -1,20 +1,21 @@
 ---
-title: 东方原作 BGM 文件格式探究
+title: 东方 Project 原作 BGM 文件格式探究
 description: 关于 thbgm.dat、thbgm.fmt 和 musiccmt.txt 的浅显研究。
 published: 2023-07-01
 tags: [Touhou,Data Structure]
 category: Explorations
 draft: false
-image: ./cover.jpg
+image: ./nikita-Oybl3L0_vq4-unsplash.webp
 permalink: touhou-bgm-format
 ---
-封面Pixiv插画ID：94070537，画师：Akyuun。如有侵权请联系我以删除之。
 
-***
+## 引入
 
-（本文主要讨论的是弹幕作。格斗作不讨论。）
+本文仅讨论由 ZUN 制作的弹幕作。格斗作等不在讨论范围内。
 
 众所周知，原作的游戏大小多在 400~500MB（除了体验版）。而游戏文件里最大的都是一个名为 **thbgm.dat**（体验版游戏中为 **thbgm_tr.dat**）的文件（th07+）或一个名为 **bgm** 的文件夹（th06）。显然这就是游戏 BGM 所在了。~~果然游戏只是音乐的载体而已。~~ 游戏 BGM 为什么这么大？它是如何储存的？本文将讨论原作 BGM 的相关文件格式。
+
+<!--
 
 <details>
 
@@ -39,6 +40,8 @@ permalink: touhou-bgm-format
     - [妖精大战争与神灵庙](#妖精大战争与神灵庙中的小改动)
 
 </details>
+
+-->
 
 ## 为什么 BGM 这么大：BGM 的音频数据
 

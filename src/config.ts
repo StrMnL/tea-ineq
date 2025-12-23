@@ -220,9 +220,9 @@ export const siteConfig: SiteConfig = {
 		},
 		cjkFont: {
 			// 中日韩字体 - 作为回退字体
-			fontFamily: "更纱黑体 UI SC",
+			fontFamily: "未来圆SC",
 			fontWeight: "500",
-			localFonts: ["sarasa-ui-sc-regular.ttf"],
+			localFonts: ["weilaiyuan-sc-regular.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
 		},
 	},

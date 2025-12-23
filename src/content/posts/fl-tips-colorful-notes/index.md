@@ -6,7 +6,7 @@ tags: [FL Studio, 编曲]
 category: 教程
 draft: false
 # image: ./00_cover.png
-permalink: fl-tips/colorful-notes
+# permalink: "fl-tips/colorful-notes"
 ---
 
 ## 引入
@@ -17,7 +17,7 @@ permalink: fl-tips/colorful-notes
 
 有一天，你发现在左上角的色块处可以改变音符的颜色——
 
-![图 1-1. 左键](01_left_click.png) ![图 1-2. 右键](02_right_click.png)
+![图 1-1. 左键](./01_left_click.png) ![图 1-2. 右键](./02_right_click.png)
 
 左键单击可以在 16 个颜色中选择一个，右键单击则可以自定义当前选中的颜色。
 
@@ -47,13 +47,13 @@ permalink: fl-tips/colorful-notes
 
 那么你应该已经想到了，在这样的采样器里是可以同时挂载多个音色实例[^2]的：
 
-![图 3-1-1. 以 HALion Sonic 为例](03_halion_sonic.png)
+![图 3-1-1. 以 HALion Sonic 为例](./03_halion_sonic.png)
 
 而每一个音色分别由对应编号的 MIDI 通道的信号控制。
 
 所以，如果需要挂载多个音色到这样的采样器上，但是出于某种原因，觉得使用 MIDI Out 太碍事的话，就可以改变音符的「颜色」后直接写在采样器的 Channel[^3] 里。
 
-![图 3-1-2. 示例](04_in_one_channel.png)
+![图 3-1-2. 示例](./04_in_one_channel.png)
 
 对于其他支持多通道输入的 VST 乐器，也可以这么干。比如需要在一些鼓机上混用两套鼓的时候。
 
@@ -65,7 +65,7 @@ permalink: fl-tips/colorful-notes
 
 使用 Harmor 时，在选择颜色的菜单里，后 5 个通道会有对应功能的说明文字。
 
-![图 3-2. Harmor 的特殊通道](05_harmor.png)
+![图 3-2. Harmor 的特殊通道](./05_harmor.png)
 
 差不多是 Keyswitch 那样的东西。
 
@@ -79,7 +79,7 @@ permalink: fl-tips/colorful-notes
 
 而选中多个音符时，双击音符又不能批量更改音符的颜色。
 
-![图 4-1. 单个音符可以修改颜色](06_single_note.png) ![图 4-2. 多个音符不可以修改颜色](07_section.png)
+![图 4-1. 单个音符可以修改颜色](./06_single_note.png) ![图 4-2. 多个音符不可以修改颜色](./07_section.png)
 
 怎么办？套一层 MIDI Out[^4] 吗？~~我之前还真是这么干的。~~
 
@@ -89,7 +89,7 @@ permalink: fl-tips/colorful-notes
 
 可以看到 Windows 下的快捷键是 `Alt + C`，按下快捷键可以达到同样的效果。
 
-![图 4-3. Change color选项](08_change_color.png)
+![图 4-3. Change color选项](./08_change_color.png)
 
 全文完。
 

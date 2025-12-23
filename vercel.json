@@ -56,6 +56,16 @@
 			"source": "/posts/20230701001/",
 			"destination": "/posts/touhou-bgm-format/",
 			"permanent": true
+		},
+		{
+			"source": "/posts/fl-tips/colorful-notes",
+			"destination": "/posts/fl-tips-colorful-notes/",
+			"permanent": false
+		},
+		{
+			"source": "/posts/fl-tips/colorful-notes/",
+			"destination": "/posts/fl-tips-colorful-notes/",
+			"permanent": false
 		}
 	]
 }

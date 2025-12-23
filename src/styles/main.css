@@ -39,6 +39,15 @@
 	font-display: swap;
 }
 
+/* 导入 未来圆 SC Regular */
+@font-face {
+	font-family: "未来圆SC";
+	src: url("/assets/font/weilaiyuan-sc-regular.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

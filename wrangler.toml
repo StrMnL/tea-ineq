@@ -1,0 +1,5 @@
+name = "diff-teatime"
+compatibility_date = "2025-12-27"
+
+[assets]
+directory = "./dist"

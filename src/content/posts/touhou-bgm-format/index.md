@@ -60,7 +60,7 @@ image: ./nikita-Oybl3L0_vq4-unsplash.webp
 
 通过观察可以猜测，文件的结构如下图所示。
 
-![ZUNWAV](./zwav.png)
+![ZUNWAV](./zwav.webp)
 
 本质上确实还是 wav 格式。
 
@@ -135,7 +135,7 @@ a7 09 04 00 a5 d8 27 00
 
 第二行则是循环点相关。具体见下面整个文件的结构。
 
-<!-- ![](fmt.png) -->
+<!-- ![](fmt.webp) -->
 
 [THBWiki 上的脚本对照表](https://thwiki.cc/-/19gc/#FMT%E6%96%87%E4%BB%B6) 用了 C 语言的结构体来表示整个文件的结构，我觉得挺清晰的。  
 改了一下copy过来：
@@ -245,7 +245,7 @@ No.1 赤より紅い夢
 
 另外，在永夜抄里添加了「Now Playing」的提示。内容和 **\<乐评里的标题\>** 是一样的。
 
-![Music Room of EoSD「恋恋音乐馆」](./musicroom_EoSD.jpg)
+![Music Room of EoSD「恋恋音乐馆」](./musicroom_EoSD.webp)
 
 ### 花映冢中的小改动
 ```
@@ -267,7 +267,7 @@ No.1  花映塚　～ Higan Retour
 
 没有 midi 的曲目的后缀名仍然是 **.mid**。后缀名相关特性同妖永。
 
-![Music Room of PoFV](./musicroom_PoFV.jpg)
+![Music Room of PoFV](./musicroom_PoFV.webp)
 
 *（题外话：为什么花映冢 Music Room 里新加的暂停和淡出到后面又没了）*
 
@@ -310,7 +310,7 @@ No.1  封印されし神々
 
 另外乐评中的空行上其实都有一个全角空格。没有全角空格的行读取时会被忽略。
 
-![Music Room of MoF](./musicroom_MoF.jpg)
+![Music Room of MoF](./musicroom_MoF.webp)
 
 ### 妖精大战争与神灵庙中的小改动
 ```
@@ -341,7 +341,7 @@ No. 1 欲深き霊魂
 暂时不知道游戏是怎么记录有没有播放过的。  
 可以看见，最后一行虽然加上了井号，但是没有被屏蔽，所以我刚才说「\# 似乎不是注释」的原因。
 
-![Music Room of TD, trying adding a custom song](./add_new_music.jpg)
+![Music Room of TD, trying adding a custom song](./add_new_music.webp)
 
 <!--下面是脚注-->
 

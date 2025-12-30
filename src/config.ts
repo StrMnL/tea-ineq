@@ -393,8 +393,8 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "最近更新", // 公告标题
-	content: "", // 公告内容
+	title: "公告", // 公告标题
+	content: "欢迎访问偏微分茶会！<br>网站仍在调试，偶尔可能不能正常访问。目前已知网站在部分地区或部分运营商线路下访问较慢。", // 公告内容
 	closable: false, // 允许用户关闭公告
 	link: {
 		enable: false, // 启用链接
@@ -453,7 +453,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：公告组件
 			type: "announcement",
 			// 是否启用该组件（现在通过统一配置控制）
-			enable: false,
+			enable: true,
 			// 组件显示顺序
 			order: 2,
 			// 组件位置："top" 表示固定在顶部

@@ -299,6 +299,17 @@ export const en: Translation = {
 	[Key.calendarOctober]: "Oct",
 	[Key.calendarNovember]: "Nov",
 	[Key.calendarDecember]: "Dec",
+
+	// Share Functionality
+	[Key.shareArticle]: "Share",
+	[Key.generatingPoster]: "Generating poster...",
+	[Key.copied]: "Copied",
+	[Key.copyLink]: "Copy Link",
+	[Key.savePoster]: "Save Poster",
+	[Key.scanToRead]: "Scan to Read",
+	[Key.shareOnSocial]: "Share",
+	[Key.shareOnSocialDescription]:
+		"If this article helped you, please share it with others!",
 	
 	[Key.footnotes]: "Footnotes",
 };

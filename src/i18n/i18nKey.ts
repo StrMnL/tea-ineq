@@ -281,7 +281,18 @@ enum I18nKey {
 	calendarNovember = "calendarNovember",
 	calendarDecember = "calendarDecember",
 
+	// 分享功能
+	shareArticle = "shareArticle",
+	generatingPoster = "generatingPoster",
+	copied = "copied",
+	copyLink = "copyLink",
+	savePoster = "savePoster",
+	scanToRead = "scanToRead",
+	shareOnSocial = "shareOnSocial",
+	shareOnSocialDescription = "shareOnSocialDescription",
+
 	footnotes = "footnotes",
 }
 
 export default I18nKey;
+

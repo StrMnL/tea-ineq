@@ -20,11 +20,11 @@ import { LinkPreset } from "./types/config";
 
 // 定义站点语言
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
-const SITE_TIMEZONE =8;//设置你的网站时区 from -12 to 12 default in UTC+8
+const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "偏微分茶会",
 	subtitle: "Tea & Inequality",
-	siteURL: "https://monlark.top/",// 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://monlark.top/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-11-10", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -60,7 +60,7 @@ export const siteConfig: SiteConfig = {
 
 	bangumi: {
 		userId: "1163911", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
-		fetchOnDev: true, // 是否在开发环境下获取 Bangumi 数据（默认 false），获取前先执行 pnpm build 构建 json 文件
+		fetchOnDev: false, // 是否在开发环境下获取 Bangumi 数据（默认 false），获取前先执行 pnpm build 构建 json 文件
 	},
 
 	anime: {
@@ -97,12 +97,8 @@ export const siteConfig: SiteConfig = {
 	banner: {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
-			desktop: [
-				"/assets/desktop-banner/movie_ending.webp",
-			], // 桌面横幅图片
-			mobile: [
-				"/assets/mobile-banner/s205_after_rain.webp"
-			], // 移动横幅图片
+			desktop: ["/assets/desktop-banner/movie_ending.webp"], // 桌面横幅图片
+			mobile: ["/assets/mobile-banner/s205_after_rain.webp"], // 移动横幅图片
 		}, // 使用本地横幅图片
 
 		position: "bottom", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
@@ -132,9 +128,7 @@ export const siteConfig: SiteConfig = {
 			enable: false, // 在主页显示自定义文本
 			title: "Tea & inequality", // 主页横幅主标题
 
-			subtitle: [
-				"StrMnL's break time here",
-			],
+			subtitle: ["StrMnL's break time here"],
 			typewriter: {
 				enable: false, // 启用副标题打字机效果
 
@@ -166,45 +160,45 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// 留空以使用默认 favicon
 		{
-		   src: '/favicon/teatime-light-192.png',    // 图标文件路径
-		   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		   sizes: '192x192',              // 可选，图标大小
+			src: "/favicon/teatime-light-192.png", // 图标文件路径
+			theme: "light", // 可选，指定主题 'light' | 'dark'
+			sizes: "192x192", // 可选，图标大小
 		},
 		{
-		   src: '/favicon/teatime-light-180.png',
-		   theme: 'light',
-		   sizes: '180x180',
+			src: "/favicon/teatime-light-180.png",
+			theme: "light",
+			sizes: "180x180",
 		},
 		{
-		   src: '/favicon/teatime-light-128.png',
-		   theme: 'light',
-		   sizes: '128x128',
+			src: "/favicon/teatime-light-128.png",
+			theme: "light",
+			sizes: "128x128",
 		},
 		{
-		   src: '/favicon/teatime-light-32.png',
-		   theme: 'light',
-		   sizes: '32x32',
+			src: "/favicon/teatime-light-32.png",
+			theme: "light",
+			sizes: "32x32",
 		},
 
 		{
-		   src: '/favicon/teatime-dark-192.png',
-		   theme: 'dark',
-		   sizes: '192x192',
+			src: "/favicon/teatime-dark-192.png",
+			theme: "dark",
+			sizes: "192x192",
 		},
 		{
-		   src: '/favicon/teatime-dark-180.png',
-		   theme: 'dark',
-		   sizes: '180x180',
+			src: "/favicon/teatime-dark-180.png",
+			theme: "dark",
+			sizes: "180x180",
 		},
 		{
-		   src: '/favicon/teatime-dark-128.png',
-		   theme: 'dark',
-		   sizes: '128x128',
+			src: "/favicon/teatime-dark-128.png",
+			theme: "dark",
+			sizes: "128x128",
 		},
 		{
-		   src: '/favicon/teatime-dark-32.png',
-		   theme: 'dark',
-		   sizes: '32x32',
+			src: "/favicon/teatime-dark-32.png",
+			theme: "dark",
+			sizes: "32x32",
 		},
 	],
 
@@ -232,12 +226,8 @@ export const siteConfig: SiteConfig = {
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
-		desktop: [
-			"/assets/desktop-banner/movie_ending.webp",
-		], // 桌面横幅图片
-		mobile: [
-			"/assets/mobile-banner/s205_after_rain.webp"
-		], // 移动横幅图片
+		desktop: ["/assets/desktop-banner/movie_ending.webp"], // 桌面横幅图片
+		mobile: ["/assets/mobile-banner/s205_after_rain.webp"], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
@@ -400,7 +390,8 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告", // 公告标题
-	content: "欢迎访问偏微分茶会！<br>网站仍在调试，偶尔可能不能正常访问。目前已知网站在部分地区或部分运营商线路下访问较慢。", // 公告内容
+	content:
+		"欢迎访问偏微分茶会！<br><br>网站仍在调试，<br>偶尔可能不能正常访问。<br><br>目前已知网站在部分地区或部分运营商线路下存在访问较慢的问题。", // 公告内容
 	closable: false, // 允许用户关闭公告
 	link: {
 		enable: false, // 启用链接

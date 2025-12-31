@@ -391,7 +391,7 @@ export const shareConfig: ShareConfig = {
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告", // 公告标题
 	content:
-		"欢迎访问偏微分茶会！<br><br>网站仍在调试，<br>偶尔可能不能正常访问。<br><br>目前已知网站在部分地区或部分运营商线路下存在访问较慢的问题。", // 公告内容
+		"欢迎访问偏微分茶会！<br><br>网站仍在调试，偶尔可能不能正常访问。<br><br>目前已知网站在部分地区或部分运营商线路下存在访问较慢的问题。", // 公告内容
 	closable: false, // 允许用户关闭公告
 	link: {
 		enable: false, // 启用链接

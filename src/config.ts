@@ -50,12 +50,16 @@ export const siteConfig: SiteConfig = {
 
 	// 顶栏标题配置
 	navbarTitle: {
+		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
+		mode: "text-icon",
 		// 顶栏标题文本
 		text: "偏微分茶会！",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
 		icon: "/assets/home/teatime-light.png",
 		// Dark mode 下的图标（可选）
 		darkIcon: "/assets/home/teatime-dark.png",
+		// 网站Logo图片路径
+		logo: "assets/home/default-logo.png",
 	},
 
 	bangumi: {
@@ -105,7 +109,6 @@ export const siteConfig: SiteConfig = {
 
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
-
 			interval: 1.5, // 轮播间隔时间（秒）
 		},
 
@@ -283,7 +286,11 @@ export const navBarConfig: NavBarConfig = {
 				},
 			],
 		},
-		LinkPreset.About,
+		{
+			name: "关于",
+			url: "/about/",
+			icon: "material-symbols:person",
+		},
 		/*{
 			name: "Others",
 			url: "#",
@@ -385,7 +392,7 @@ export const commentConfig: CommentConfig = {
 };
 
 export const shareConfig: ShareConfig = {
-	enable: true, // 启用分享功能。当设置为 false 时，分享组件将不会显示在文章区域，且不会加载分享组件使用的库
+	enable: true, // 启用分享功能
 };
 
 export const announcementConfig: AnnouncementConfig = {

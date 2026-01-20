@@ -427,14 +427,14 @@ if (siteConfig.font) {
 
 <script>
 	// import { animationManager } from '../utils/animation-utils';
-	// import "overlayscrollbars/overlayscrollbars.css";
-	// import {
-	//  OverlayScrollbars,
+	import "overlayscrollbars/overlayscrollbars.css";
+	import {
+	OverlayScrollbars,
 	//  // ScrollbarsHidingPlugin,
 	//  // SizeObserverPlugin,
 	//  // ClickScrollPlugin
-	// } from 'overlayscrollbars';
-	// import {getHue, getStoredTheme, setHue, setTheme} from "../utils/setting-utils";
+	} from 'overlayscrollbars';
+	import {getHue, getStoredTheme, setHue, setTheme} from "../utils/setting-utils";
 	import { pathsEqual, url } from "../utils/url-utils";
 	import {
 		// BANNER_HEIGHT,
@@ -449,7 +449,7 @@ if (siteConfig.font) {
 	const BANNER_HEIGHT_EXTEND = 30;
 	const BANNER_HEIGHT_HOME = BANNER_HEIGHT + BANNER_HEIGHT_EXTEND;
 
-	// const MAIN_PANEL_OVERLAPS_BANNER_HEIGHT = 3.5;
+	const MAIN_PANEL_OVERLAPS_BANNER_HEIGHT = 3.5;
 	import { siteConfig } from "../config";
 	import { widgetConfigs } from "../config";
 	import { initSakura } from "../utils/sakura-manager";
@@ -566,7 +566,7 @@ function disableAnimation() {
 	//  setHue(getHue())
 	// }
 
-	function initCustomScrollbar() {
+	/* function initCustomScrollbar() {
 		// 完全禁用OverlayScrollbars的body初始化，避免导致页面重新加载
 		// 只处理katex元素的滚动条
 		const katexElements = document.querySelectorAll(
@@ -612,6 +612,71 @@ function disableAnimation() {
 			}
 
 			element.setAttribute("data-scrollbar-initialized", "true");
+		});
+	} */
+
+	function initCustomScrollbar() {
+		const bodyElement = document.querySelector('body');
+		if (!bodyElement) return;
+		OverlayScrollbars(
+			// docs say that a initialization to the body element would affect native functionality like window.scrollTo
+			// but just leave it here for now
+			{
+				target: bodyElement,
+				cancel: {
+					nativeScrollbarsOverlaid: true,    // don't initialize the overlay scrollbar if there is a native one
+				}
+			}, {
+				scrollbars: {
+					theme: 'scrollbar-base scrollbar-auto py-1',
+					autoHide: 'move',
+					autoHideDelay: 500,
+					autoHideSuspend: false,
+				},
+			});
+
+		const katexElements = document.querySelectorAll('.katex-display') as NodeListOf<HTMLElement>;
+
+		const katexObserverOptions = {
+			root: null,
+			rootMargin: '100px',
+			threshold: 0.1
+		};
+
+		const processKatexElement = (element: HTMLElement) => {
+			if (!element.parentNode) return;
+			if (element.hasAttribute('data-scrollbar-initialized')) return;
+
+			const container = document.createElement('div');
+			container.className = 'katex-display-container';
+			container.setAttribute('aria-label', 'scrollable container for formulas');
+
+			element.parentNode.insertBefore(container, element);
+			container.appendChild(element);
+
+			OverlayScrollbars(container, {
+				scrollbars: {
+					theme: 'scrollbar-base scrollbar-auto',
+					autoHide: 'leave',
+					autoHideDelay: 500,
+					autoHideSuspend: false
+				}
+			});
+
+			element.setAttribute('data-scrollbar-initialized', 'true');
+		};
+
+		const katexObserver = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+				processKatexElement(entry.target as HTMLElement);
+				observer.unobserve(entry.target);
+				}
+			});
+		}, katexObserverOptions);
+
+		katexElements.forEach(element => {
+			katexObserver.observe(element);
 		});
 	}
 
